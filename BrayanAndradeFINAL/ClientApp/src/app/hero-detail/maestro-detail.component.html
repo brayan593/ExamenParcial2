@@ -1,0 +1,20 @@
+<div *ngIf="hero">
+
+  <h2>Clientes e infromación</h2>
+  <div><span>cedula: </span>{{hero.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name" />
+      <div><span>direccion: </span>{{hero.direccion}}</div>
+      <div><span>telefono: </span>{{hero.telefono}}</div>
+      <div><span>fecha_emision: </span>{{hero.fecha_emision}}</div>
+      <div><span>producto: </span>{{hero.producto}}</div>
+      <div><span>cantidad: </span>{{hero.cantidad}}</div>
+      <div><span>Precio_Unitario: </span>{{hero.Precio_Unitario}}</div>
+      <div><span>subtotal: </span>{{hero.subtotal}}</div>
+      <div><span>iva: </span>{{hero.iva}}</div>
+
+    </label>
+  </div>
+
+</div>

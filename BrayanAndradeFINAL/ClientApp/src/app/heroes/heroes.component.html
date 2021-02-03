@@ -1,0 +1,18 @@
+<input type="button" value="cargar datos" (click)="getHeroes()" >
+<div class="row">
+  <div class="col-6">
+    <h2>Mis Heroes</h2>
+    <ul class="heroes">
+      <li *ngFor="let hero of heroes">
+        <a routerLink="/detail/{{hero.id}}">
+          <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-6">
+    esto maneja el componente detalle
+    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+    esto maneja el componente detalle
+  </div>
+</div>
